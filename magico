@@ -1,0 +1,11 @@
+#!/bin/bash
+
+### Copiar o theme.xml para todas as pastas
+for i in `ls -d */`
+  do cp theme.xml $i
+done
+
+### Copiar o theme.xml para todas as pastas
+for i in `ls -d */`
+  do cp menu.xcf $i
+done

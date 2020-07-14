@@ -1,0 +1,12 @@
+#!/bin/bash
+
+### Entrar em cada pasta e pagar os .jpg, se existir
+for i in `ls -d */`
+  do rm -Rf $i/*.jpg
+done
+
+### Entrar em cada pasta, otimizar o menu.png e sair da pasta, até fazer todas as pastas
+for i in `ls -d */`
+  do echo "Entrando na pasta $1" && cd $i && optipng -o7 -f4 -strip all menu.png && echo "Saindo da pasta $1" && cd ..
+done
+

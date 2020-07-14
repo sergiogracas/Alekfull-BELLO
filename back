@@ -1,0 +1,12 @@
+#!/bin/bash
+
+### fazer backup do custom.xml original
+for i in `ls -d */`
+  do mv $i/custom.xml $i/custom1.xml
+done
+
+### Copiar o custom.xml para todas as pastas
+for i in `ls -d */`
+  do cp custom.xml $i
+done
+
